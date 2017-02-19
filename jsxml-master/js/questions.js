@@ -41,10 +41,7 @@ function gestionarXml(dadesXml){
  var tituloInput=xmlDoc.getElementsByTagName("title")[0].innerHTML;
  ponerDatosInputHtml(tituloInput);
  numeroSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
- 
-  var tituloInput2=xmlDoc.getElementsByTagName("title")[0].innerHTML;
- ponerDatosInputHtml(tituloInput2);
- numeroSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
+
  //SELECT
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
  var tituloSelect=xmlDoc.getElementsByTagName("title")[1].innerHTML;
