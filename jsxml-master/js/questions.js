@@ -42,7 +42,7 @@ function gestionarXml(dadesXml){
  ponerDatosInputHtml(tituloInput);
  numeroSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
  
-  var tituloInput=xmlDoc.getElementsByTagName("title")[0].innerHTML;
+  var tituloInput2=xmlDoc.getElementsByTagName("title")[0].innerHTML;
  ponerDatosInputHtml(tituloInput2);
  numeroSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[0].innerHTML);
  //SELECT
@@ -131,6 +131,9 @@ function corregirCheckbox(){
 // poner los datos recibios en el HTML
 function ponerDatosInputHtml(t){
  document.getElementById("tituloInput").innerHTML = t;
+}
+function ponerDatosInputHtml(t){
+ document.getElementById("tituloInput2").innerHTML = t;
 }
 
 function ponerDatosSelectHtml(t,opt){
